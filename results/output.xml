@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-25T11:19:15.794692" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\julia\Documents\goTest\robot-tests\test.robot">
+<test id="s1-t1" name="Test case using blur parameter" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-25T11:19:16.019186" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<arg>https://www.youtube.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-25T11:19:16.019186" elapsed="4.466587"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-25T11:19:20.485773" elapsed="0.361545"/>
+</kw>
+<kw name="Open Eyes" owner="RobotEyes">
+<msg time="2024-06-25T11:19:20.853081" level="INFO">roboteyestestfolder: Test_case_using_blur_parameter</msg>
+<arg>lib=SeleniumLibrary</arg>
+<arg>tolerance=10</arg>
+<arg>cleanup=None</arg>
+<status status="PASS" start="2024-06-25T11:19:20.847318" elapsed="0.005763"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=guide-inner-content</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-25T11:19:20.855092" elapsed="0.103202"/>
+</kw>
+<kw name="Capture Full Screen" owner="RobotEyes">
+<msg time="2024-06-25T11:19:21.404850" level="INFO">Frames: 2
+Switching to Frame &lt;selenium.webdriver.remote.webelement.WebElement (session="b8e8863fbbf7706cd714d36e41b485a2", element="f.981338F83277EABFAE80AE1E2A0B3414.d.E7AD6615FBE82F8422AFF6FEDEFB4B4C.e.36")&gt;
+Switching to Frame &lt;selenium.webdriver.remote.webelement.WebElement (session="b8e8863fbbf7706cd714d36e41b485a2", element="f.981338F83277EABFAE80AE1E2A0B3414.d.E7AD6615FBE82F8422AFF6FEDEFB4B4C.e.37")&gt;
+Switching back to initial frame and name is None</msg>
+<arg>blur=${blur}</arg>
+<arg>radius=50</arg>
+<status status="PASS" start="2024-06-25T11:19:20.959712" elapsed="0.445138"/>
+</kw>
+<kw name="Compare Images" owner="RobotEyes">
+<msg time="2024-06-25T11:19:21.914009" level="INFO">Comparison output: b'0 (0) @ 0,0'</msg>
+<status status="PASS" start="2024-06-25T11:19:21.405849" elapsed="0.508160"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-25T11:19:21.915047" elapsed="2.330952"/>
+</kw>
+<status status="PASS" start="2024-06-25T11:19:16.019186" elapsed="8.226813"/>
+</test>
+<test id="s1-t2" name="Test case using capture element keyword" line="19">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-25T11:19:24.245999" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<arg>https://www.youtube.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-25T11:19:24.245999" elapsed="4.372680"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-25T11:19:28.618679" elapsed="0.208424"/>
+</kw>
+<kw name="Open Eyes" owner="RobotEyes">
+<msg time="2024-06-25T11:19:28.833921" level="INFO">roboteyestestfolder: Test_case_using_capture_element_keyword</msg>
+<arg>lib=SeleniumLibrary</arg>
+<arg>tolerance=15</arg>
+<arg>cleanup=None</arg>
+<status status="PASS" start="2024-06-25T11:19:28.828119" elapsed="0.005802"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=center</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-25T11:19:28.833921" elapsed="0.283492"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-25T11:19:29.118255" level="INFO">Clicking element 'id=center'.</msg>
+<arg>id=center</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T11:19:29.117617" elapsed="0.095815"/>
+</kw>
+<kw name="Capture Element" owner="RobotEyes">
+<arg>id=center</arg>
+<status status="PASS" start="2024-06-25T11:19:29.214625" elapsed="1.234847"/>
+</kw>
+<kw name="Compare Images" owner="RobotEyes">
+<msg time="2024-06-25T11:19:30.543816" level="INFO">Comparison output: b'1453.99 (0.0221864) @ 0,0'</msg>
+<status status="PASS" start="2024-06-25T11:19:30.450029" elapsed="0.093885"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-25T11:19:30.543914" elapsed="2.348972"/>
+</kw>
+<status status="PASS" start="2024-06-25T11:19:24.245999" elapsed="8.646887"/>
+</test>
+<test id="s1-t3" name="Test case using redact parameter" line="29">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-25T11:19:32.896848" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<arg>https://www.youtube.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-25T11:19:32.896848" elapsed="5.303092"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-25T11:19:38.200840" elapsed="0.157994"/>
+</kw>
+<kw name="Open Eyes" owner="RobotEyes">
+<msg time="2024-06-25T11:19:38.363875" level="INFO">roboteyestestfolder: Test_case_using_redact_parameter</msg>
+<arg>lib=SeleniumLibrary</arg>
+<arg>tolerance=15</arg>
+<arg>cleanup=None</arg>
+<status status="PASS" start="2024-06-25T11:19:38.358834" elapsed="0.005041"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=center</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-25T11:19:38.363875" elapsed="0.119693"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-25T11:19:38.484576" level="INFO">Clicking element 'id=center'.</msg>
+<arg>id=center</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T11:19:38.484576" elapsed="0.096232"/>
+</kw>
+<kw name="Capture Full Screen" owner="RobotEyes">
+<msg time="2024-06-25T11:19:39.027633" level="INFO">Frames: 3
+Switching to Frame &lt;selenium.webdriver.remote.webelement.WebElement (session="e6490881e0e881f70e7e721b8b36040d", element="f.28F3C04BD4701E5781F287EB654440F2.d.166652904285B55E0492E15C8197E814.e.36")&gt;
+Switching to Frame &lt;selenium.webdriver.remote.webelement.WebElement (session="e6490881e0e881f70e7e721b8b36040d", element="f.28F3C04BD4701E5781F287EB654440F2.d.166652904285B55E0492E15C8197E814.e.37")&gt;
+Switching to Frame &lt;selenium.webdriver.remote.webelement.WebElement (session="e6490881e0e881f70e7e721b8b36040d", element="f.28F3C04BD4701E5781F287EB654440F2.d.166652904285B55E0492E15C8197E814.e.38")&gt;
+Switching back to initial frame and name is None</msg>
+<arg>redact=${redact}</arg>
+<status status="PASS" start="2024-06-25T11:19:38.580808" elapsed="0.446825"/>
+</kw>
+<kw name="Compare Images" owner="RobotEyes">
+<msg time="2024-06-25T11:19:39.434287" level="INFO">Comparison output: b'0 (0) @ 0,0'</msg>
+<status status="PASS" start="2024-06-25T11:19:39.028559" elapsed="0.405728"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-25T11:19:39.434287" elapsed="2.364073"/>
+</kw>
+<status status="PASS" start="2024-06-25T11:19:32.895371" elapsed="8.902989"/>
+</test>
+<status status="PASS" start="2024-06-25T11:19:15.800360" elapsed="26.003641"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
