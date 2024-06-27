@@ -8,8 +8,7 @@ Library    RobotEyes
 
 *** Test Cases ***    
 Test case using blur parameter
-    Open Browser    https://www.youtube.com/    chrome
-    Maximize Browser Window
+    Open Browser    url=https://www.youtube.com/    browser=chrome    options=add_argument("--window-size=1920,1080")
     Open Eyes  lib=SeleniumLibrary  tolerance=10  cleanup=None
     Wait Until Element Is Visible    id=guide-inner-content
     Capture Full Screen    blur=${blur}    radius=50
@@ -17,8 +16,7 @@ Test case using blur parameter
     Close Browser
 
 Test case using capture element keyword
-    Open Browser    https://www.youtube.com/    chrome
-    Maximize Browser Window
+    Open Browser    url=https://www.youtube.com/    browser=chrome    options=add_argument("--window-size=1920,1080")
     Open Eyes  lib=SeleniumLibrary  tolerance=15  cleanup=None
     Wait Until Element Is Visible    id=center
     Click Element    id=center
@@ -27,8 +25,7 @@ Test case using capture element keyword
     Close Browser
 
 Test case using redact parameter
-    Open Browser    https://www.youtube.com/    chrome
-    Maximize Browser Window
+    Open Browser    url=https://www.youtube.com/    browser=chrome    options=add_argument("--window-size=1920,1080")
     Open Eyes  lib=SeleniumLibrary  tolerance=15  cleanup=None
     Wait Until Element Is Visible    id=center
     Click Element    id=center
